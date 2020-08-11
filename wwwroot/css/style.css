@@ -1,0 +1,84 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h1 {
+    text-align: center;
+    padding: 50px; 
+}
+
+img {
+    width: 300px; 
+}
+td {
+    padding: 5px; 
+}
+form {
+    grid-row: auto;
+    width: 8%; 
+    padding: 10px; 
+    text-align: center; 
+    margin-left: 10px; 
+    display: inline-block; 
+
+}
+
+  
+  input[type=text], select, textarea {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px 15px 20px; 
+    margin: 10px;
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+
+  #beemo {
+        width: 40%;
+        margin-left: 30%; 
+        display: inline-block; 
+
+  }
+ 
+   h3 {
+    text-align: center;
+    
+
+  }
+  #container h4 {
+    margin-left: 250px;
+  }
+
+  .buttons {
+    margin-left: 35%;
+  }
+  
+ 

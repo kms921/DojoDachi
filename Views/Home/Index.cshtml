@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+
+</head>
+<body>
+    <div id="container">
+        <h1>Hi!  I'm Beemo!!</h1>
+        <h3>
+            <span>Fullness : @ViewBag.Fullness</span>
+            <span>Happiness : @ViewBag.Happiness</span>
+            <span>Energy : @ViewBag.Energy</span>
+            <span>TachiMeals Left : @ViewBag.Meals</span>
+
+        </h3>
+    </div>
+        <img src=~/images/beemo.jpg alt="beemo" id="beemo">
+        <h3>@TempData["Message"]</h3>
+            @if(ViewBag.Result == true)
+            {
+             <div class= "buttons">
+                <form asp-action="Restart" method="POST">
+                <button onClick()>Restart/Reset Scores</button>
+                </form>
+            </div>
+            }
+            else {
+        <div class = "buttons">
+        <form asp-action="Feed" method="POST">
+            <button onClick()>Feed</button>
+        </form>
+        <form asp-action="Play" method="POST">
+            <button onClick()>Play</button>
+        </form>
+        <form asp-action="Work" method="POST">
+            <button onClick()>Work</button>
+        </form>
+        <form asp-action="Sleep" method="POST">
+        <button onClick()>Sleep</button>
+        </form>
+        </div>
+        <div> <h3>@ViewBag.Message</h3></div>
+        }
+    
+    
+
+
+</body>
+</html>
